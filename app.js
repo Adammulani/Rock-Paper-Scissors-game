@@ -1,8 +1,11 @@
-let uscore=0;  //user score
-let cscore=0;  //computer score
+let user_score=0;  //user score
+let comp_score=0;  //computer score
 
 const uchoices=document.querySelectorAll(".choice");
 const msg=document.querySelector("#msg");
+
+const uscore_para=document.querySelector("#user-score");
+const cscore_para=document.querySelector("#computer-score");
 
 const computersTurn=()=>{
     const choices=["rock","paper","scissors"];
@@ -20,14 +23,16 @@ const gameDraw=()=>{
 const showWinner=(userwin,userchoice,compChoice)=>{
     if(userwin)
     {
-        console.log("!! You win ");
+        user_score++;
         msg.innerText=`!! You win , Your ${userchoice} beats ${compChoice}`;
         msg.style.backgroundColor="#155d27";
+        uscore_para.innerText=user_score;
     }
     else{
-        console.log("---You lost the game---")
+        comp_score++;
         msg.innerText=msg.innerText=`!! You lose ,${compChoice} beats  your ${userchoice}`;
         msg.style.backgroundColor="#c1121f";
+        cscore_para.innerText=comp_score;
 
 
     }
