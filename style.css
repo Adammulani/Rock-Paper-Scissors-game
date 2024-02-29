@@ -8,9 +8,30 @@ h1{
     color: #caf0f8;
     height: 5rem;
     line-height: 5rem;
+    border-radius: 2rem 2rem 0rem 0rem;
     
 
 }
+.container{
+    background-color: #457b9d;
+    width: 50%;
+    height:40rem;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    box-shadow:0 0 2rem rgba(0, 0,0, 0.4);
+    
+}
+.global-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+body{
+    background-color: #98c1d9
+}
+
 .choice{
     height: 165px;
     width: 165px;
@@ -55,6 +76,6 @@ img{
     color: white;
     display: inline;
     border-radius: 1rem;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1rem;
 }
